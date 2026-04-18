@@ -141,7 +141,7 @@ export default function ContactPage() {
                     <p className="mt-2 text-base font-semibold text-[#007C91]">{info.details}</p>
                     <p className="text-sm text-gray-400 mt-1">{info.sub}</p>
                     
-                    <div className="mt-4 flex items-center gap-1 text-sm font-medium text-[#007C91] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-8px] group-hover:translate-x-0">
+                    <div className="mt-4 flex items-center gap-1 text-sm font-medium text-[#007C91] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0">
                       Get in touch
                       <FiArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -246,7 +246,7 @@ export default function ContactPage() {
                 className="space-y-6"
               >
                 {/* Office Hours - Premium Card */}
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0D2024] to-[#0D2024]/90 p-6 shadow-xl">
+                <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-[#0D2024] to-[#0D2024]/90 p-6 shadow-xl">
                   <div className="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-[#007C91]/20 blur-2xl" />
                   
                   <div className="relative">
@@ -312,7 +312,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Trust Badge - Premium */}
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#007C91]/10 to-transparent border border-[#007C91]/20 p-6">
+                <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-[#007C91]/10 to-transparent border border-[#007C91]/20 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-sm font-semibold text-[#007C91]">Average response time</p>
@@ -350,7 +350,7 @@ export default function ContactPage() {
                   e.target.src = "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=2070&auto=format";
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0D2024]/80 via-[#0D2024]/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0D2024]/80 via-[#0D2024]/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="inline-block rounded-xl bg-white/95 backdrop-blur-sm p-4 shadow-xl">
                   <p className="font-bold text-[#0D2024]">Transiflow Headquarters</p>
