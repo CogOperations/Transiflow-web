@@ -42,10 +42,22 @@ export default function Footer() {
   ];
 
   const socials = [
-    { name: "Instagram", href: "#", icon: <FiInstagram size={18} /> },
-    { name: "LinkedIn", href: "#", icon: <FiLinkedin size={18} /> },
-    { name: "Twitter", href: "#", icon: <FiTwitter size={18} /> },
-    { name: "Facebook", href: "#", icon: <FiFacebook size={18} /> },
+    {
+      name: "Instagram",
+      href: "https://www.facebook.com/Transiflow93/",
+      icon: <FiInstagram size={18} />,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/company/transiflow93",
+      icon: <FiLinkedin size={18} />,
+    },
+    {
+      name: "Twitter",
+      href: "https://x.com/transiflow93/status/2046184737018950015",
+      icon: <FiTwitter size={18} />,
+    },
+    // { name: "Facebook", href: "#", icon: <FiFacebook size={18} /> },
   ];
 
   return (
@@ -65,10 +77,8 @@ export default function Footer() {
 
       <footer className="bg-white border-t border-gray-200 px-5 py-12 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          
           {/* Main Footer Grid */}
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            
             {/* Brand Section */}
             <div className="lg:col-span-1">
               {/* Logo - No background */}
@@ -86,8 +96,8 @@ export default function Footer() {
               {/* Description */}
               <p className="mt-4 text-sm leading-relaxed text-gray-500">
                 Helping users and transport operators manage journeys with more
-                visibility, safety, and ease through a modern, reliable transport
-                experience built for confidence.
+                visibility, safety, and ease through a modern, reliable
+                transport experience built for confidence.
               </p>
 
               {/* Social Icons */}
@@ -97,6 +107,7 @@ export default function Footer() {
                     key={social.name}
                     href={social.href}
                     aria-label={social.name}
+                    target="blank"
                     className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-all duration-200 hover:bg-[#007C91] hover:text-white"
                   >
                     {social.icon}
@@ -131,11 +142,15 @@ export default function Footer() {
               <div className="mt-4 space-y-3">
                 <div className="flex items-center gap-3">
                   <FiMail size={14} className="text-[#007C91]" />
-                  <span className="text-sm text-gray-500">hello@transiflow.com</span>
+                  <span className="text-sm text-gray-500">
+                    transiflow93@gmail.com
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FiPhone size={14} className="text-[#007C91]" />
-                  <span className="text-sm text-gray-500">+234 000 000 0000</span>
+                  <span className="text-sm text-gray-500">
+                    +234 811 810 2812
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FiMapPin size={14} className="text-[#007C91]" />
