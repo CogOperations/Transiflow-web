@@ -78,8 +78,8 @@ const coreValues = [
 
 const teamMembers = [
   { name: "David Utenwojo Usman", role: "Project Manager", avatar: imgDavid },
-  { name: "Ogweyibo Kennedy", role: "UI/UX Lead", avatar: imgKennedy },
   { name: "Jesse Aporah", role: "Tech Lead", avatar: imgJesse },
+  { name: "Ogweyibo Kennedy", role: "UI/UX Lead", avatar: imgKennedy },
   { name: "Victor Abuka", role: "Fullstack Lead", avatar: imgVictor },
   {
     name: "Bunu Vanessa Gloria",
