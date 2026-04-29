@@ -83,7 +83,7 @@ const teamMembers = [
   { name: "Victor Abuka", role: "Fullstack Lead", avatar: imgVictor },
   {
     name: "Bunu Vanessa Gloria",
-    role: "Social Media Manager",
+    role: "Lead Social Media Manager",
     avatar: imgVanessa,
   },
   { name: "Dimeji Alatishe", role: "QA Team Lead", avatar: imgDimeji },
@@ -97,7 +97,7 @@ const teamMembers = [
   { name: "Ajisegiri Ni'imatullah", role: "QA/Tester", avatar: imgAjisegiri },
   { name: "Oke Merrybell", role: "Virtual Assistant", avatar: imgMerrybell },
   { name: "Otti Oluwapenni", role: "QA/Tester", avatar: imgOtti },
-  
+
   { name: "Akanni Abdulmuiz", role: "Graphic Designer", avatar: imgAkanni },
   { name: "Akolawole Fawemimo", role: "Backend Developer", avatar: imgKola },
   {
@@ -498,7 +498,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <h3 className="text-xs sm:text-sm font-bold text-[#0D2024] leading-tight">
-                    {member.name.split(" ").slice(0, 2).join(" ")}
+                    {member.name.split(" ").slice(0, 3).join(" ")}
                   </h3>
                   <p className="text-[10px] sm:text-xs text-[#007C91] font-medium mt-0.5 sm:mt-1">
                     {member.role}
