@@ -1,18 +1,16 @@
-import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import {
-  FiShield,
-  FiEye,
-  FiTarget,
-  FiHeart,
-  FiTrendingUp,
-  FiUsers,
-  FiGlobe,
   FiArrowRight,
   FiChevronDown,
   FiChevronUp,
+  FiEye,
+  FiHeart,
+  FiShield,
+  FiTarget,
+  FiTrendingUp,
+  FiUsers
 } from "react-icons/fi";
 import {
   imgAjisegiri,
@@ -37,6 +35,8 @@ import {
   imgVictor,
   imgWilliams,
 } from "../assets/images";
+import Footer from "../components/Footer";
+
 
 const coreValues = [
   {

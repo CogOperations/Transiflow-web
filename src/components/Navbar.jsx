@@ -5,6 +5,7 @@ import logo from "../assets/logo.png";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
+  { name: "Careers", path: "/careers" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -26,9 +27,7 @@ export default function Navbar() {
 
   const linkClass = ({ isActive }) =>
     `relative transition-all duration-300 text-sm font-medium ${
-      isActive 
-        ? "text-[#007C91]" 
-        : "text-gray-600 hover:text-[#007C91]"
+      isActive ? "text-[#007C91]" : "text-gray-600 hover:text-[#007C91]"
     }`;
 
   return (
@@ -38,15 +37,15 @@ export default function Navbar() {
         <div
           className={`
             w-full max-w-7xl transition-all duration-300
-            ${scrolled 
-              ? "bg-white/95 backdrop-blur-md shadow-lg border border-gray-100" 
-              : "bg-white/90 backdrop-blur-sm border border-gray-100/50"
+            ${
+              scrolled
+                ? "bg-white/95 backdrop-blur-md shadow-lg border border-gray-100"
+                : "bg-white/90 backdrop-blur-sm border border-gray-100/50"
             }
             rounded-2xl
           `}
         >
           <div className="flex items-center justify-between px-5 py-3 md:px-6 lg:px-8">
-            
             {/* Logo Section */}
             <Link to="/" className="flex items-center gap-3 group">
               <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-[#007C91] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
@@ -100,7 +99,9 @@ export default function Navbar() {
               onClick={() => setIsOpen((prev) => !prev)}
               aria-label="Toggle menu"
             >
-              <span className={`text-xl text-gray-700 transition-all duration-300 ${isOpen ? "rotate-90" : ""}`}>
+              <span
+                className={`text-xl text-gray-700 transition-all duration-300 ${isOpen ? "rotate-90" : ""}`}
+              >
                 {isOpen ? "✕" : "☰"}
               </span>
             </button>
