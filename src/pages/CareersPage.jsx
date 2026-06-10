@@ -21,6 +21,7 @@ import Section from "../components/common/Section";
 
 const CareersPage = () => {
   const heroRef = useRef(null);
+  const openingsRef = useRef(null);
 
   const heroInView = useInView(heroRef, {
     once: true,
@@ -97,11 +98,22 @@ const CareersPage = () => {
             >
               <button
                 onClick={() => {
-                  document
-                    .getElementById("openings")
-                    ?.scrollIntoView({ behavior: "smooth" });
+                  const el = openingsRef.current;
+                  if (!el) return;
+
+                  const offset = 80;
+
+                  const top =
+                    el.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    offset;
+
+                  window.scrollTo({
+                    top,
+                    behavior: "smooth",
+                  });
                 }}
-                className="bg-[#007C91] hover:bg-[#006b7d] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
+                className="cursor-pointer bg-[#007C91] hover:bg-[#006b7d] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
               >
                 View Open Roles
               </button>
@@ -110,7 +122,7 @@ const CareersPage = () => {
                 onClick={() => {
                   window.location.href = "mailto:transiflow93@gmail.com";
                 }}
-                className="border border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
+                className="cursor-pointer border border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
               >
                 Contact Us
               </button>
@@ -120,7 +132,7 @@ const CareersPage = () => {
 
         {/* OPENINGS */}
         <Section
-          id="openings"
+          ref={openingsRef}
           title="Current Openings"
           description="Volunteer Roles — Remote"
           className="max-w-7xl mx-auto px-6 py-20"
